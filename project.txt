@@ -1,0 +1,46 @@
+1 User Story
+The user wants a quick and easy way to see the top rated movies and tv series,
+as well as search for them through themoviedatabase.
+# Prerequisites
+- Everything is available as a single page application YES
+- The app is responsive YES
+- The app works on mobile YES
+- The app runs on Chrome and Safari
+# Acceptance Criteria
+- One tab for movies, one for series DONE
+- I can see the 30 top rated movies/series DONE
+    - prvo fixaj bug sto kad click na neki page pa onda na 10. page, ne radi DONE
+- I can search for movies/series DONE
+- After typing 3 letters the search starts DONE
+- If there are no results, show a message to the user DONE
+- If there are results, show a cards with title and image DONE
+- On desktop 3 cards per row DONE
+- On mobile 1 card per row DONE
+- Clicking on a card shows a new view DONE
+- The view shows image, title and details about the movie/series DONE
+- The user can navigate back DONE
+- Clearing the search switches back to 30 top rated movies/series DONE
+# MY REQUIREMENTS
+- Pagination for movies and series DONE
+- Pagination when searching
+- Open title details when searching DONE
+- Hold separate current page state for movies and series tab DONE
+# Known Restrictions
+- When switching search between movies and series, the search term should be kept DONE
+- Also when navigating back and forth between details and search results DONE
+- While the search is fetching results (is loading):
+- the old results should still be displayed DONE
+- the searchbar should display a loading spinner
+# Remarks
+- You can a use a CSS framework like Material or Bootstrap
+- Use Angular or React as core technologies
+Introduction to themoviedb API:
+https://developers.themoviedb.org/3/getting-started/introduction
+Top rated movies/series
+https://developers.themoviedb.org/3/movies/get-top-rated-movies
+https://developers.themoviedb.org/3/tv/get-top-rated-tv
+1.2 Delivery conditions
+Create a GitHub repository and send us the built project as a Zip file.
+After delivery, we will arrange a meeting for presentation (5-10 minutes)
+1.3 Due date
+The due date is one week after receiving the task.

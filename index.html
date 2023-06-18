@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieDB</title>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"-->
+    <link rel="stylesheet" href="stylesheet2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="overlay">
+      <div
+        id="popup-container"
+        class="d-flex align-items-center justify-content-center">
+        <div class="popup-content bg-white p-4" id="popup-content">
+          
+        </div>
+        <span id="close-btn" class="close-btn">&times;</span>
+      </div>
+    </div>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark bg-dark mr-lg-4"
+    >
+      <div class="container">
+        <a class="navbar-brand d-none d-sm-block" href="#">
+          <img
+            width="100px"
+            id="navbar-logo"
+            src="https://seeklogo.com/images/I/imdb-internet-movie-database-logo-F0B614FDFD-seeklogo.com.png"
+            alt=""
+          />
+        </a>
+        <div class="d-flex flex-grow-1">
+          <input
+            id="searchbar"
+            class="form-control me-2 form-control-sm flex-md-grow-2"
+            type="search"
+            placeholder="Search"
+          />
+        </div>
+        <div class="ml-auto">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="movies-tab">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="series-tab">Series</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-2 p-2 mb-4" id="appbody">
+      <div
+        class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3 p-2"
+        id="top30cards"
+      ></div>
+      <div id="pagination-buttons" class="pagination justify-content-center fixed-bottom pb-1 pt-2 bg-dark">
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="1"
+        >
+          1
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="2"
+        >
+          2
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="3"
+        >
+          3
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="4"
+        >
+          4
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="5"
+        >
+          5
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="6"
+        >
+          6
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="7"
+        >
+          7
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="8"
+        >
+          8
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="9"
+        >
+          9
+        </button>
+        <button
+          class="pagination-button btn btn-sm btn-outline-primary mx-1"
+          data-page="10"
+        >
+          10
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
